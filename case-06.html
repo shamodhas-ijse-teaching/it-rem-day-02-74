@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        section {
+            position: relative;
+            overflow: hidden;
+            background: url("assets/image/sky.jpg") center;
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        section>section:first-child {
+            background: url("assets/image/city.png") space center;
+            width: 200vw;
+            height: 30vh;
+            position: absolute;
+            bottom: 30vh;
+            background-size: 100vw 30vh;
+            animation-name: background_containers;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        section>section:nth-child(2) {
+            background: url("assets/image/road.jpg") center;
+            width: 200vw;
+            height: 30vh;
+            position: absolute;
+            bottom: 0;
+            background-size: 100vw 30vh;
+            animation-name: background_containers;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        section>aside>img:first-child {
+            height: 120px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 22vh;
+            margin: auto;
+        }
+
+        section>aside>aside {
+            display: flex;
+            width: 200px;
+            position: absolute;
+            bottom: 22vh;
+            gap: 115px;
+            left: 390px;
+        }
+
+        section>aside>aside>img {
+            height: 60px;
+            animation-name: wheels;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes background_containers {
+            0% {
+                transform: translate(0vw);
+            }
+
+            100% {
+                transform: translate(-100vw);
+            }
+        }
+
+        @keyframes wheels {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <section></section>
+        <section></section>
+        <aside>
+            <img src="assets/image/car.png" alt="car image" />
+            <aside>
+                <img src="assets/image/wheel.png" alt="wheel 01" />
+                <img src="assets/image/wheel.png" alt="wheel 02" />
+            </aside>
+        </aside>
+    </section>
+
+</body>
+
+</html>
