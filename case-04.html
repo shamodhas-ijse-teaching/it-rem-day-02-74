@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 10px;
+            height: 10px;
+            border: purple solid 4px;
+            border-radius: 100%;
+            position: absolute;
+            inset: 0;
+            margin: auto;
+            animation-name: water_drop_animation;
+            animation-duration: 1000ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes water_drop_animation {
+            0% {
+                width: 10px;
+                height: 10px;
+                border: 5px solid #730000;
+            }
+
+            100% {
+                width: 300px;
+                height: 300px;
+                border: 2px solid #1d08ff;
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
