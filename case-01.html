@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ass 04</title>
+    <script src="https://kit.fontawesome.com/ccc46c292a.js" crossorigin="anonymous"></script>
+    <style>
+        ul {
+            position: relative;
+            width: 240px;
+            height: 600px;
+            top: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            right: 230px;
+        }
+
+        li {
+            position: relative;
+            left: 0;
+            width: 100%;
+            background-color: #7557af;
+            box-shadow: 3px 2px 5px 1px #906fd3;
+            color: #fff;
+            padding: 5px;
+            transition-property: all;
+            transition-duration: 1s;
+        }
+
+        li:hover {
+            left: 180px;
+            background-color: aquamarine;
+            /* optional */
+            transition-property: all;
+            transition-duration: 1s;
+            
+        }
+
+        h2 {
+            position: absolute;
+            padding-left: 10px;
+            height: max-content;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        i {
+            position: absolute;
+            right: 15px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            height: max-content;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <ul>
+            <li>
+                <h2>Menu One</h2>
+                <i class="fa-solid fa-book"></i>
+            </li>
+            <li>
+                <h2>Menu Two</h2>
+                <i class="fa-solid fa-house"></i>
+            </li>
+            <li>
+                <h2>Menu Tree</h2>
+                <i class="fa-solid fa-pen"></i>
+            </li>
+            <li>
+                <h2>Menu Four</h2>
+                <i class="fa-solid fa-list"></i>
+            </li>
+            <li>
+                <h2>Menu Five</h2>
+                <i class="fa-solid fa-user"></i>
+            </li>
+        </ul>
+    </section>
+</body>
+
+</html>
